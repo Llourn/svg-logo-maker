@@ -4,6 +4,10 @@
 
 SVG Logo Maker is a NodeJS console app that allows you to choose text, shape and colors for your next logo and generates a beautiful SVG file to those specifications!
 
+
+https://user-images.githubusercontent.com/4216705/227921880-acb6a27e-c0c7-404b-bd91-2838f4293627.mov
+
+
 ## Table of Contents
 
 - [Installation](#installation)
