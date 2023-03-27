@@ -19,6 +19,6 @@
     "nodemon": "^2.0.22"
   },
   "dependencies": {
-    "inquirer": "^9.1.5"
+    "inquirer": "^8.2.5"
   }
 }

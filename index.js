@@ -1,7 +1,7 @@
-import inquirer from "inquirer";
+const inquirer = require("inquirer");
 const questions = require("./lib/prompt.js");
-const generateShape = require("./lib/shapes.js");
 const writeToFile = require("./lib/output.js");
+const { Circle, Square, Triangle } = require("./lib/shapes.js");
 
 function start() {
   inquirer
@@ -35,3 +35,19 @@ xmlns="http://www.w3.org/2000/svg"
 }
 
 start();
+
+function generateShape(shape, color) {
+  switch (shape) {
+    case "circle":
+      return new Circle(color).render();
+
+    case "square":
+      return new Square(color).render();
+
+    case "triangle":
+      return new Triangle(color).render();
+
+    default:
+      break;
+  }
+}
