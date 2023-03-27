@@ -19,7 +19,7 @@ xmlns="http://www.w3.org/2000/svg"
   <text x="151" y="120" font-size="60" text-anchor="middle" fill="${
     answers.textColor
   }">
-    ${answers.text}
+    ${answers.text ? answers.text.trim() : ""}
   </text>
 </svg>
       `;
@@ -39,13 +39,16 @@ start();
 function generateShape(shape, color) {
   switch (shape) {
     case "circle":
-      return new Circle(color).render();
+      const circle = new Circle(color);
+      return circle.render();
 
     case "square":
-      return new Square(color).render();
+      const square = new Square(color);
+      return square.render();
 
     case "triangle":
-      return new Triangle(color).render();
+      const triangle = new Triangle(color);
+      return triangle.render();
 
     default:
       break;
